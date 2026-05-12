@@ -8,7 +8,7 @@ public class PrintService<T extends Comparable<T>> {
 	 private List<T> list = new ArrayList<>();
 	 
 	 public void addValue(T e) {
-		 list.add(e); 
+		 list.add(e);
 	 }
 	 
 	 public T first() {
@@ -16,7 +16,8 @@ public class PrintService<T extends Comparable<T>> {
 	 }
 	 
 	 public void print() {
-		 list.sort(null);
-		 System.out.println(list);
+		 List<T> temp = new ArrayList<>(list); // cópia temporária da lista principal
+		 temp.sort(null);
+		 System.out.println(temp);
 	 }
 }

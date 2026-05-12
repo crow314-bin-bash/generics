@@ -35,7 +35,10 @@ public class Main {
 				}
 				printService.addValue(readerBuffer);
 			}
+			System.out.println("\n");
 			printService.print();
+			System.out.println("\n");
+			System.out.println("O primeiro elemento digitado é: " + printService.first());
 		}
 		
 		catch (IllegalStateException e) {
