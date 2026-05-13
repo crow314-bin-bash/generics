@@ -18,6 +18,6 @@ public class PrintService<T extends Comparable<T>> {
 	 public void print() {
 		 List<T> temp = new ArrayList<>(list); // cópia temporária da lista principal
 		 temp.sort(null);
-		 System.out.println(temp);
+		 System.out.println("Os elementos em ordem crescente são:\n" + temp);
 	 }
 }
